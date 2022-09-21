@@ -3,3 +3,4 @@
 venv
 extensions
 **/certificate.p12
+**/__pycache__
