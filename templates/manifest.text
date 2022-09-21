@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ExtensionManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ExtensionBundleId="{ExtensionBundleId}" ExtensionBundleVersion="{ExtensionBundleVersion}" Version="6.0">
+    <ExtensionList>
+        <Extension Id="{ExtensionId}" Version="{ExtensionVersion}"/>
+    </ExtensionList>
+    <ExecutionEnvironment>
+        <HostList>
+            <Host Name="{HostName}" Version="{HostVersion}"/>
+        </HostList>
+        <LocaleList>
+            <Locale Code="All"/>
+        </LocaleList>
+        <RequiredRuntimeList>
+            <RequiredRuntime Name="CSXS" Version="9.0"/>
+        </RequiredRuntimeList>
+    </ExecutionEnvironment>
+    <DispatchInfoList>
+        <Extension Id="{ExtensionId}">
+            <DispatchInfo>
+                <Resources>
+                    <MainPath>./index.html</MainPath>
+					<ScriptPath>./scriptEval.jsx</ScriptPath>
+                    <CEFCommandLine>
+                        <Parameter>--disable-site-isolation-trials</Parameter>
+						<Parameter>--enable-nodejs</Parameter>
+                    </CEFCommandLine>
+                </Resources>
+                <Lifecycle>
+                    <AutoVisible>true</AutoVisible>
+                </Lifecycle>
+                <UI>
+                    <Type>Panel</Type>
+                    <Menu>{ExtensionMenu}</Menu>
+                    <Geometry>
+                        <Size>
+                            <Height>580</Height>
+                            <Width>1020</Width>
+                        </Size>
+                        <MaxSize>
+                            <Height>800</Height>
+                            <Width>1200</Width>
+                        </MaxSize>
+                        <MinSize>
+                            <Height>400</Height>
+                            <Width>600</Width>
+                        </MinSize>
+                    </Geometry>
+                </UI>
+            </DispatchInfo>
+        </Extension>
+    </DispatchInfoList>
+</ExtensionManifest>

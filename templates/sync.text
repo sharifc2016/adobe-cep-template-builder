@@ -1,0 +1,3 @@
+import dirsync
+source, dest = '{ExtensionBundleId}', '{CepExtensionPath}'
+dirsync.sync(source, dest, 'sync', verbose=True, create = True)

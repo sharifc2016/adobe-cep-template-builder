@@ -1,0 +1,20 @@
+{
+  "ExtensionBundle": {
+    "Name": "barcode2",
+    "Id": "com.mds.barcode2",
+    "Version": "1.0"
+  },
+  "Extension": {
+    "Id": "com.mds.barcode.panel",
+    "Menu": "barcode",
+    "Version": "1.0",
+    "Height": 500,
+    "Width": 1000
+  },
+  "Host": {
+    "Name": "ILST",
+    "Version": "19.0",
+    "Debug": "8302"
+  },
+  "CepExtensionPath": "/Users/sharif/Library/Application Support/Adobe/CEP/extensions"
+}
